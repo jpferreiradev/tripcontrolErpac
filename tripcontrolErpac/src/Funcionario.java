@@ -9,6 +9,9 @@ public class Funcionario {
     private String cargo;
     private String setor;
 
+    Funcionario(){
+
+    }
     Funcionario(boolean ativo, long cpf, String nome, String enderero,String email,String cargo,String setor){
         this.ativo = ativo;
         this.cpf = cpf;
@@ -73,5 +76,18 @@ public class Funcionario {
 
     public void setSetor(String setor) {
         this.setor = setor;
+    }
+
+    @Override
+    public String toString() {
+        return "Funcionario{" +
+                "ativo=" + ativo +
+                ", cpf=" + cpf +
+                ", nome='" + nome + '\'' +
+                ", endereco='" + endereco + '\'' +
+                ", email='" + email + '\'' +
+                ", cargo='" + cargo + '\'' +
+                ", setor='" + setor + '\'' +
+                '}';
     }
 }

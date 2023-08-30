@@ -1,21 +1,18 @@
-public class Cargo {
+package Viagem;
 
-    private boolean ativo;
+public class Setor {
+
+
     private int codigo;
     private String nome;
 
-    Cargo(boolean ativo, int codigo,String nome){
-        this.ativo = ativo;
+    Setor(){
+
+    }
+    Setor(int codigo, String nome){
         this.codigo = codigo;
         this.nome = nome;
-    }
 
-    public boolean isAtivo() {
-        return this.ativo;
-    }
-
-    public void setAtivo(boolean ativo) {
-        this.ativo = ativo;
     }
 
     public int getCodigo() {
@@ -33,7 +30,4 @@ public class Cargo {
     public void setNome(String nome) {
         this.nome = nome;
     }
-
-
-
 }

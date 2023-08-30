@@ -1,3 +1,5 @@
+package Viagem;
+
 import javax.crypto.Cipher;
 
 public class Cliente {

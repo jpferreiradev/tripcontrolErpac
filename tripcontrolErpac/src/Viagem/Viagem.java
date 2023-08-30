@@ -1,18 +1,17 @@
+package Viagem;
+
 import java.util.Date;
 
 public class Viagem {
 
-    private Date data;
-    private int destinoCNPJ;
+    private String data;
+    private String destinoCNPJ;
     private String autor;
-    private int agendadoCPF;
-    private int motoristaCPF;
+    private String agendadoCPF;
+    private String motoristaCPF;
     private String situacao;
 
-    public Viagem(){
-
-    }
-     public Viagem(Date data, int destinoCNPJ, String autor, int agendadoCPF, int motoristaCPF, String situacao) {
+    public Viagem(String data, String destinoCNPJ, String autor, String agendadoCPF, String motoristaCPF, String situacao) {
         this.data = data;
         this.destinoCNPJ = destinoCNPJ;
         this.autor = autor;
@@ -21,19 +20,23 @@ public class Viagem {
         this.situacao = situacao;
     }
 
-    public Date getData() {
+    public Viagem() {
+
+    }
+
+    public String getData() {
         return this.data;
     }
 
-    public void setData(Date data) {
+    public void setData(String data) {
         this.data = data;
     }
 
-    public int getDestinoCNPJ() {
+    public String getDestinoCNPJ() {
         return this.destinoCNPJ;
     }
 
-    public void setDestinoCNPJ(int destinoCNPJ) {
+    public void setDestinoCNPJ(String destinoCNPJ) {
         this.destinoCNPJ = destinoCNPJ;
     }
 
@@ -45,19 +48,19 @@ public class Viagem {
         this.autor = autor;
     }
 
-    public int getAgendadoCPF() {
+    public String getAgendadoCPF() {
         return this.agendadoCPF;
     }
 
-    public void setAgendadoCPF(int agendadoCPF) {
+    public void setAgendadoCPF(String agendadoCPF) {
         this.agendadoCPF = agendadoCPF;
     }
 
-    public int getMotoristaCPF() {
+    public String getMotoristaCPF() {
         return this.motoristaCPF;
     }
 
-    public void setMotoristaCPF(int motoristaCPF) {
+    public void setMotoristaCPF(String motoristaCPF) {
         this.motoristaCPF = motoristaCPF;
     }
 

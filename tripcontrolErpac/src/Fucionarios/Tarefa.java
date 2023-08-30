@@ -1,3 +1,5 @@
+package Fucionarios;
+
 public class Tarefa {
 
     private int codigo;

@@ -1,3 +1,5 @@
+package Viagem;
+
 public class Cidade {
 
     private String nomeCidade;

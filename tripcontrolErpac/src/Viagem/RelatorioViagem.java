@@ -1,4 +1,8 @@
-public class RelatorioViagem {
+package Viagem;
+
+import Viagem.Viagem;
+
+public class RelatorioViagem extends Viagem {
 
 
     private int codigoViagem;

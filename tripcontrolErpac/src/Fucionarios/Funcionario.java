@@ -1,8 +1,10 @@
+package Fucionarios;
+
 public class Funcionario {
 
 
     private boolean ativo;
-    private long cpf;
+    private String cpf;
     private String nome;
     private String endereco;
     private String email;
@@ -12,7 +14,7 @@ public class Funcionario {
     Funcionario(){
 
     }
-    Funcionario(boolean ativo, long cpf, String nome, String enderero,String email,String cargo,String setor){
+    Funcionario(boolean ativo, String cpf, String nome, String enderero,String email,String cargo,String setor){
         this.ativo = ativo;
         this.cpf = cpf;
         this.nome = nome;
@@ -30,11 +32,11 @@ public class Funcionario {
         this.ativo = ativo;
     }
 
-    public long getCpf() {
+    public String getCpf() {
         return this.cpf;
     }
 
-    public void setCpf(long cpf) {
+    public void setCpf(String cpf) {
         this.cpf = cpf;
     }
 
@@ -80,7 +82,7 @@ public class Funcionario {
 
     @Override
     public String toString() {
-        return "Funcionario{" +
+        return "Fucionarios.Funcionario: " +
                 "ativo=" + ativo +
                 ", cpf=" + cpf +
                 ", nome='" + nome + '\'' +

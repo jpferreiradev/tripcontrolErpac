@@ -1,3 +1,5 @@
+package Viagem;
+
 public interface Dominio {
 
 

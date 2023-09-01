@@ -1,5 +1,6 @@
 package Viagem;
 
+import Fucionarios.Dominio;
 import Viagem.Viagem;
 
 public class RelatorioViagem extends Viagem {
@@ -51,4 +52,7 @@ public class RelatorioViagem extends Viagem {
     public void setHoraSaida(double horaSaida) {
         this.horaSaida = horaSaida;
     }
+
+
+
 }

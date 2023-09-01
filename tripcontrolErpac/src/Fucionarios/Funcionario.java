@@ -1,6 +1,8 @@
 package Fucionarios;
 
-public class Funcionario {
+import Viagem.DominioDois;
+
+public class Funcionario implements Dominio  {
 
 
     private boolean ativo;
@@ -11,10 +13,11 @@ public class Funcionario {
     private String cargo;
     private String setor;
 
-    Funcionario(){
+    Funcionario() {
 
     }
-    Funcionario(boolean ativo, String cpf, String nome, String enderero,String email,String cargo,String setor){
+
+    public Funcionario(boolean ativo, String cpf, String nome, String enderero, String email, String cargo, String setor) {
         this.ativo = ativo;
         this.cpf = cpf;
         this.nome = nome;
@@ -81,15 +84,35 @@ public class Funcionario {
     }
 
     @Override
+    public void cadastrar() {
+
+    }
+
+    @Override
+    public void listar() {
+
+    }
+
+    @Override
+    public void alterar() {
+
+    }
+
+    @Override
+    public void remover() {
+
+    }
+
+    @Override
     public String toString() {
-        return "Fucionarios.Funcionario: " +
-                "ativo=" + ativo +
-                ", cpf=" + cpf +
-                ", nome='" + nome + '\'' +
-                ", endereco='" + endereco + '\'' +
-                ", email='" + email + '\'' +
-                ", cargo='" + cargo + '\'' +
-                ", setor='" + setor + '\'' +
-                '}';
+
+        String s = " \nAtivo: " + ativo;
+                s += " \nCPF: " + cpf;
+                s += " \nNome:" + nome;
+                s += " \nEndereço :" + endereco;
+                s += " \nEmail: " + email;
+                s += " \nCargo: " + cargo;
+                s += " \nSetor: " + setor;
+        return s;
     }
 }

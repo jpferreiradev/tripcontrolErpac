@@ -1,8 +1,10 @@
 package Viagem;
 
+import Fucionarios.Dominio;
+
 import javax.crypto.Cipher;
 
-public class Cliente {
+public class Cliente implements Dominio {
 
     private int cnpj;
     private boolean ativo;
@@ -81,5 +83,23 @@ public class Cliente {
         this.email = email;
     }
 
+    @Override
+    public void cadastrar() {
 
+    }
+
+    @Override
+    public void listar() {
+
+    }
+
+    @Override
+    public void alterar() {
+
+    }
+
+    @Override
+    public void remover() {
+
+    }
 }

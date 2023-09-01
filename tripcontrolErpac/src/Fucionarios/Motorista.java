@@ -1,6 +1,8 @@
 package Fucionarios;
 
-public class Motorista extends Funcionario {
+import Viagem.DominioDois;
+
+public class Motorista extends Funcionario implements DominioDois {
 
     private boolean ativo;
     private String cpf;
@@ -25,5 +27,15 @@ public class Motorista extends Funcionario {
 
     public void setCpf(String cpf) {
         this.cpf = cpf;
+    }
+
+    @Override
+    public void listarAtivo() {
+
+    }
+
+    @Override
+    public void listarInativo() {
+
     }
 }

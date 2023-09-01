@@ -1,6 +1,8 @@
 package Fucionarios;
 
-public class Tarefa {
+import Viagem.DominioDois;
+
+public class Tarefa implements DominioDois {
 
     private int codigo;
     private String nome;
@@ -36,5 +38,13 @@ public class Tarefa {
         this.setor = setor;
     }
 
+    @Override
+    public void listarAtivo() {
 
+    }
+
+    @Override
+    public void listarInativo() {
+
+    }
 }

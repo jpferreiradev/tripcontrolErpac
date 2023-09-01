@@ -1,6 +1,8 @@
 package Fucionarios;
 
-public class Cargo {
+import Viagem.DominioDois;
+
+public class Cargo implements DominioDois {
 
     private boolean ativo;
     private int codigo;
@@ -36,6 +38,13 @@ public class Cargo {
         this.nome = nome;
     }
 
+    @Override
+    public void listarAtivo() {
 
+    }
 
+    @Override
+    public void listarInativo() {
+
+    }
 }

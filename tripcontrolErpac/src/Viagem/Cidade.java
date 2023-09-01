@@ -1,6 +1,8 @@
 package Viagem;
 
-public class Cidade {
+import Fucionarios.Dominio;
+
+public class Cidade implements DominioDois  {
 
     private String nomeCidade;
     private String estado;
@@ -28,4 +30,13 @@ public class Cidade {
         this.nomeCidade = nomeCidade;
     }
 
+    @Override
+    public void listarAtivo() {
+
+    }
+
+    @Override
+    public void listarInativo() {
+
+    }
 }

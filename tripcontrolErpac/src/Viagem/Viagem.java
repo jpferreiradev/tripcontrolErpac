@@ -1,8 +1,10 @@
 package Viagem;
 
+import Fucionarios.Dominio;
+
 import java.util.Date;
 
-public class Viagem {
+public class Viagem implements Dominio {
 
     private String data;
     private String destinoCNPJ;
@@ -70,5 +72,37 @@ public class Viagem {
 
     public void setSituacao(String situacao) {
         this.situacao = situacao;
+    }
+
+
+    @Override
+    public void cadastrar() {
+
+    }
+
+    @Override
+    public void listar() {
+
+    }
+
+    @Override
+    public void alterar() {
+
+    }
+
+    @Override
+    public void remover() {
+
+    }
+
+    @Override
+    public String toString() {
+        String s = "\nData: " + data;
+        s += "\nDestino: " + destinoCNPJ;
+        s += "\nAutor:" + autor;
+        s += "\nAgendado por:" + agendadoCPF;
+        s += "\nMotorista:" + motoristaCPF;
+        s += "\nSituação: " + situacao;
+        return s;
     }
 }

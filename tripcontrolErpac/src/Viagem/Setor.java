@@ -1,6 +1,8 @@
 package Viagem;
 
-public class Setor {
+import Fucionarios.Dominio;
+
+public class Setor implements DominioDois{
 
 
     private int codigo;
@@ -29,5 +31,15 @@ public class Setor {
 
     public void setNome(String nome) {
         this.nome = nome;
+    }
+
+    @Override
+    public void listarAtivo() {
+
+    }
+
+    @Override
+    public void listarInativo() {
+
     }
 }
